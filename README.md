@@ -41,6 +41,16 @@ No stopword removal or TF-IDF weighting, so the raw count vocabulary is dominate
 Binary task only; the full BBC corpus has five categories, and the harder pairs (business vs politics) are not tested here.
 106 test documents is too few to distinguish between the top three models.
 
+## Data
+
+`train.csv` (428 articles) and `test.csv` (106 articles) are a two-class
+subset of the BBC news corpus, filtered to technology and entertainment.
+
+Original corpus: D. Greene and P. Cunningham, "Practical Solutions to the
+Problem of Diagonal Dominance in Kernel Document Clustering", ICML 2006.
+http://mlg.ucd.ie/datasets/bbc.html
+
 ## Running it
 
-See data/README.md for the dataset source. Open analysis.ipynb and run top to bottom.
+Clone the repo, open `analysis.ipynb`, run top to bottom. Requires pandas,
+scikit-learn, matplotlib and statsmodels.
